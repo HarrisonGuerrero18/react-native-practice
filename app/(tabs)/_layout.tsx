@@ -30,6 +30,30 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
         }}
       />
+
+      <Tabs.Screen
+        name="perfil-personal"
+        options={{
+          title: 'Perfil',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="person.circle.fill" color={color} />,
+        }}
+      />
+
+      <Tabs.Screen
+        name="card"
+        options={{
+          title: 'Card',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="key.card.fill" color={color} />,
+        }}
+      />
+
+      <Tabs.Screen
+        name="lista-contactos"
+        options={{
+          title: 'Contactos',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="person.2.fill" color={color} />,
+        }}
+      />
     </Tabs>
   );
 }

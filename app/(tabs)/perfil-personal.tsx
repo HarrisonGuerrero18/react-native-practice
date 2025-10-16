@@ -45,7 +45,6 @@ const PerfilPersonal: React.FC = () => {
       }
     >
       <View style={styles.container}>
-        {/* Información principal */}
         <View style={styles.mainInfo}>
           <Text style={[styles.title, isDark && styles.textDark]}>
             {profileData.name}
@@ -55,7 +54,6 @@ const PerfilPersonal: React.FC = () => {
           </Text>
         </View>
 
-        {/* Biografía */}
         <View style={styles.section}>
           <Text style={[styles.sectionTitle, isDark && styles.textDark]}>
             Acerca de
@@ -65,7 +63,6 @@ const PerfilPersonal: React.FC = () => {
           </Text>
         </View>
 
-        {/* Información de contacto */}
         <View style={styles.section}>
           <Text style={[styles.sectionTitle, isDark && styles.textDark]}>
             Contacto
@@ -74,7 +71,6 @@ const PerfilPersonal: React.FC = () => {
           <InfoItem label="Email" value={profileData.email} />
         </View>
 
-        {/* Estadísticas o métricas */}
         <View style={styles.statsContainer}>
           <View style={styles.statItem}>
             <Text style={[styles.statNumber, isDark && styles.textDark]}>150</Text>
@@ -82,12 +78,12 @@ const PerfilPersonal: React.FC = () => {
           </View>
           <View style={styles.statDivider} />
           <View style={styles.statItem}>
-            <Text style={[styles.statNumber, isDark && styles.textDark]}>2.5K</Text>
+            <Text style={[styles.statNumber, isDark && styles.textDark]}>45.7M</Text>
             <Text style={[styles.statLabel, isDark && styles.bioDark]}>Seguidores</Text>
           </View>
           <View style={styles.statDivider} />
           <View style={styles.statItem}>
-            <Text style={[styles.statNumber, isDark && styles.textDark]}>5+</Text>
+            <Text style={[styles.statNumber, isDark && styles.textDark]}>18+</Text>
             <Text style={[styles.statLabel, isDark && styles.bioDark]}>Años Exp.</Text>
           </View>
         </View>
@@ -185,7 +181,6 @@ const styles = StyleSheet.create({
     height: 40,
     backgroundColor: '#e5e7eb',
   },
-  // Estilos para modo oscuro
   textDark: {
     color: '#f9fafb',
   },
